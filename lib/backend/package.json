@@ -1,0 +1,9 @@
+{
+  "name": "@konstructor/backend",
+  "version": "1.0.0",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "aws-cdk": "^1.51.0"
+  }
+}
