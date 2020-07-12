@@ -40,6 +40,7 @@ const postOnSync = (url: string): OnSyncCallback => async ({ queue }) => {
     headers: {
       "Content-Type": "application/json",
     },
+    method: "POST",
   }).catch(() => {
     throw new WorkboxError("queue-replay-failed", { name: queue.name });
   });

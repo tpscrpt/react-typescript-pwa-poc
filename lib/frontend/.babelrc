@@ -1,4 +1,28 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
-  "plugins": ["syntax-dynamic-import", "react-hot-loader/babel"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "absoluteRuntime": false,
+        "corejs": false,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ],
+    "syntax-dynamic-import",
+    "react-hot-loader/babel"
+  ]
 }
