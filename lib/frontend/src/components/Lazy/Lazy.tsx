@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./index.css";
 
 async function shouldWork(): Promise<void> {
   return;
@@ -11,7 +12,7 @@ const Lazy = (): JSX.Element => {
   });
 
   return (
-    <div>
+    <div className="Lazy">
       <span>Lazy abc me {miniState}</span>
     </div>
   );

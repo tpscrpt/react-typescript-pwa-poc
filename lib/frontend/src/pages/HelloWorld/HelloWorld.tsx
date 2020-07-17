@@ -1,8 +1,14 @@
 import React from "react";
 import { Lazy } from "../../components/Lazy";
 
+async function abc(): Promise<void> {
+  return;
+}
+
+abc();
+
 const HelloWorld = (): JSX.Element => (
-  <div>
+  <div className="page">
     <span>asdf</span>
     <Lazy />
   </div>
